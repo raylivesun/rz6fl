@@ -1,4 +1,4 @@
- 1. Introduction
+ # rz6fl encrypt local data values to current values
   
  
 This code snippet appears to be written in Common Lisp.
@@ -1173,5 +1173,8 @@ local government policies: Electric buses have a lower maintenance cost compared
 # ANSWER: Electric buses are generally easier to access compared to diesel buses. This is due to the use of electricity, which is less likely to damage vehicles compared to diesel fuel.
 local government policies: Electric buses have a lower maintenance cost compared to diesel buses. This means they can be maintained more easily and less frequently, reducing the need for regular repairs and maintenance. They are also generally safer than diesel buses. This is due to the
 
-
+# make compile program:.
+make all
+# run program:
+./rz6fl
 
