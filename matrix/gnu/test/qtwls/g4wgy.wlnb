@@ -1,0 +1,368 @@
+{
+ "cells": [
+  {
+   "kind": 2,
+   "value": "Infinity + m/n == 0 + AlternatingFactorial[-n] + l + Tan[0] + \nAlternatingFactorial[Plus[l]] + Tan[0]\nInfinity == l + AlternatingFactorial[l] + AlternatingFactorial[-n]\nNumberQ[16.8]\nm = {{1, 2/3}, {4., 5 + 6 I}};\nn = 2;\nl = 3;\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><w>∞</w><w class=\"symbol\"></w><wrow><w></w><w>l</w><w>+</w><wrow><w></w><w>AlternatingFactorial</w><wrow><w></w><wb>[</wb><w>l</w><wb>]</wb></wrow></wrow><w>+</w><wrow><w></w><w>AlternatingFactorial</w><wrow><w></w><wb>[</wb><wrow><w></w><w>-</w><w>n</w></wrow><wb>]</wb></wrow></wrow></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "Infinity == l + AlternatingFactorial[l] + AlternatingFactorial[-n]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "be851a88-9599-4706-b200-ba5b12bd8f7f",
+     "metadata": {
+      "cellLabel": "Out[1]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><w>∞</w><w class=\"symbol\"></w><wrow><w></w><w>l</w><w>+</w><wrow><w></w><w>AlternatingFactorial</w><wrow><w></w><wb>[</wb><w>l</w><wb>]</wb></wrow></wrow><w>+</w><wrow><w></w><w>AlternatingFactorial</w><wrow><w></w><wb>[</wb><wrow><w></w><w>-</w><w>n</w></wrow><wb>]</wb></wrow></wrow></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "Infinity == l + AlternatingFactorial[l] + AlternatingFactorial[-n]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "57f89925-854c-4366-886b-f26735ee6649",
+     "metadata": {
+      "cellLabel": "Out[2]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>True</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "True",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d9bf6aa0-97bb-42cc-a8c1-2a9a811f9b5a",
+     "metadata": {
+      "cellLabel": "Out[3]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042726281,
+     "endTime": 1732042726814
+    },
+    "executionOrder": 1,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "(**Calculate the alternating factorial**)\nAlternatingFactorial[n_] := If[n == 0, 1, (-1)^n n!]\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<pre><span class=\"wl-message\">SetDelayed::write</span>: \n   Tag AlternatingFactorial in AlternatingFactorial[n_] is Protected.</pre>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "SetDelayed::write: \n   Tag AlternatingFactorial in AlternatingFactorial[n_] is Protected.",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e9f654e7-7506-4d8d-b570-0040c10e7fe6",
+     "metadata": {
+      "cellLabel": "",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>$Failed</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "$Failed",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "c619f4e8-9402-43a5-9c73-ea0cd10ae1a8",
+     "metadata": {
+      "cellLabel": "Out[7]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042750192,
+     "endTime": 1732042750512
+    },
+    "executionOrder": 7,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "(**Calculate the infinite series**)\nseries = Sum[AlternatingFactorial[Plus[l]] Tan[0], {l, Infinity}]\n\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>0</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "0",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a589c448-f55c-4603-b374-b13d5ed4e265",
+     "metadata": {
+      "cellLabel": "Out[8]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042782417,
+     "endTime": 1732042782549
+    },
+    "executionOrder": 8,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "(**Evaluate the series and check if it equals 16.8**)\nseries == 16.8\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>False</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "False",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "c0b39fd2-5eac-486c-af03-ddf875b646bf",
+     "metadata": {
+      "cellLabel": "Out[9]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042807383,
+     "endTime": 1732042807515
+    },
+    "executionOrder": 9,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "(**Evaluate the expression with given values*)\nexpr = Infinity + m/n + series\nexpr == 16.8\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>∞</w><w>,</w><w>∞</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>∞</w><w>,</w><w>∞</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{Infinity, Infinity}, {Infinity, Infinity}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "0809d6f9-ea0b-437e-ba41-cbd859aa7b3c",
+     "metadata": {
+      "cellLabel": "Out[10]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>∞</w><w>,</w><w>∞</w></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>∞</w><w>,</w><w>∞</w></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow><w class=\"symbol\"></w><w>16.8</w></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{Infinity, Infinity}, {Infinity, Infinity}} == 16.8",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "a811dd05-c000-46ea-a32e-68f9c5359448",
+     "metadata": {
+      "cellLabel": "Out[11]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042836646,
+     "endTime": 1732042836897
+    },
+    "executionOrder": 10,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "(**Check if the result is an integer**)\nNumberQ[expr]\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><w>False</w></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "False",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "f553ebdc-6b54-4641-989c-d5726a2fafcc",
+     "metadata": {
+      "cellLabel": "Out[12]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042857195,
+     "endTime": 1732042857330
+    },
+    "executionOrder": 12,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "f[xp0_?NumberQ] := \n Block[{x, t}, \n  First[x[10] /. \n    NDSolve[{x''[t] + Sin[x[t]] == 0, x[0] == 0, x'[0] == xp0}, \n     x, {t, 0, 10}]]]\n",
+   "languageId": "wolfram",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042876411,
+     "endTime": 1732042876586
+    },
+    "executionOrder": 13,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "f[0.5]\nf[xp0]\n",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><w>-</w><w>0.205056</w></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "-0.20505571777226558",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "d77cd393-0002-4d1b-be74-8d01bd006277",
+     "metadata": {
+      "cellLabel": "Out[14]= ",
+      "isBoxData": false
+     }
+    },
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><w>f</w><wrow><w></w><wb>[</wb><w>xp0</w><wb>]</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "f[xp0]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2ccb5ab4-292c-4cf8-bb92-86a3c2af017c",
+     "metadata": {
+      "cellLabel": "Out[15]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042898018,
+     "endTime": 1732042898691
+    },
+    "executionOrder": 14,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "Plot[f[xp0], {xp0, 0, 2}]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wgraph class=\"resizable\" style=\"width:480px;height:284px;\" aspect-ratio=\"0.591667\" tabIndex=\"-1\"><img src=\"data:image/png;base64,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\ngg==\n\" /></wgraph></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "Graphics[{{}, {}}, {DisplayFunction -> Identity, DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, AxesOrigin -> {0, 0}, FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, GridLines -> {None, None}, DisplayFunction -> Identity, PlotRangePadding -> {{Scaled[0.02], Scaled[0.02]}, {Scaled[0.05], Scaled[0.05]}}, PlotRangeClipping -> True, ImagePadding -> All, DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), Axes -> {True, True}, AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, DisplayFunction :> Identity, Frame -> {{False, False}, {False, False}}, FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, GridLines -> {None, None}, GridLinesStyle -> Directive[GrayLevel[0.5, 0.4]], Method -> {\"DefaultBoundaryStyle\" -> Automatic, \"DefaultGraphicsInteraction\" -> {\"Version\" -> 1.2, \"TrackMousePosition\" -> {True, False}, \"Effects\" -> {\"Highlight\" -> {\"ratio\" -> 2}, \"HighlightPoint\" -> {\"ratio\" -> 2}, \"Droplines\" -> {\"freeformCursorMode\" -> True, \"placement\" -> {\"x\" -> \"All\", \"y\" -> \"None\"}}}}, \"DefaultMeshStyle\" -> AbsolutePointSize[6], \"ScalingFunctions\" -> None, \"CoordinatesToolOptions\" -> {\"DisplayFunction\" -> ({(Identity[#1] & )[#1[[1]]], (Identity[#1] & )[#1[[2]]]} & ), \"CopiedValueFunction\" -> ({(Identity[#1] & )[#1[[1]]], (Identity[#1] & )[#1[[2]]]} & )}}, PlotRange -> {{0, 2}, {0., 0.}}, PlotRangeClipping -> True, PlotRangePadding -> {{Scaled[0.02], Scaled[0.02]}, {Scaled[0.02], Scaled[0.02]}}, Ticks -> {Automatic, Automatic}}]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "cc469510-b913-46f5-8f67-b34c129a13fe",
+     "metadata": {
+      "cellLabel": "Out[1]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1732042959553,
+     "endTime": 1732042964731
+    },
+    "executionOrder": 1,
+    "success": true
+   }
+  }
+ ]
+}

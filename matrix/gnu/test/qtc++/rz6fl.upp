@@ -1,0 +1,18 @@
+uses
+	CtrlLib,
+	DocTypes,
+	RichEdit,
+	Docking;
+
+file
+	uw1g.cpp,
+	yz30au.cpp,
+	ok2ptz.cpp,
+	rk9jxp.cpp,
+	ha6kvb.cpp,
+	ha7wen.cpp,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+
