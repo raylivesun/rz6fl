@@ -1,0 +1,16 @@
+#!/usr/bin/gdb
+
+# settings of calls
+set $ebp = 250;
+set $pbp = 250;
+# values of arguments
+call $ebp
+# values of arguments
+call $pbp
+break . checkfiles
+find . name **checkfiles**
+p start
+len_rquote(rquote.$ebp);
+len_lquote(lquote.$pbp);
+end
+

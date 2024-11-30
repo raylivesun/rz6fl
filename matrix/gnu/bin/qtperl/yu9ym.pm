@@ -1,5 +1,10 @@
 #!/usr/bin/perl -w
 
+# ;;; yu9ym.pm --- JEQ L1
+
+# ;;; Commentary:
+# ;; 
+
 use Hash::Util::FieldHash;
 use strict;
 use warnings;
@@ -84,4 +89,127 @@ if ($action eq 'add' || $action eq 'update' || $action eq 'delete' || $action eq
     } else {
     usage();
     }
+
+sub cpan_list_perl {
+    my $mdFiles = shift;
+    my $mdPerl  = $mdFiles->{listen};
+    # list of submenu link enough cpan
+    # perl list create pp command perl
+    my $mdTile  = caller($mdPerl);
+    my $mdCout  = caller($mdPerl);
+
+    return $mdPerl->{$mdTile+$mdCout};
+}
+
+sub cpan_list_packers_perl {
+    my $autoRain = shift;
+    my $continue = $autoRain->{connections};
+    my $checkup  = cpan_list_perl();
+    my $series   = cpan_list_perl();
+    my $stream   = cpan_list_perl();
+    return $continue;
+}
+
+# The code snippet provided is a part of a Common Lisp
+# program that sets up a signal handler and defines a
+# usage function. Here's the expanded code:
+
+sub capn_list_lambda_exist {
+    my $mdDialog     = shift;
+    my $mdSelfTab    = $mdDialog->{listen};
+    my $mdFiles      = $mdDialog->{checkup};
+    my $mdMaps       = $mdDialog->{message};
+    my $mdLink       = $mdDialog->{link};
+    my $mdFits       = $mdDialog->{element};
+    # perl security sigma dialog self 
+    my $mdClick      = $mdDialog->{mouse};  
+    my $mdLinkFit    = $mdDialog->{element}; 
+    my $mdSelf       = $mdDialog->{button};
+    my $mdWiki       = $mdDialog->{manual};
+    my $mdMode       = $mdDialog->{perl};
+    my $mdDocument   = $mdDialog->{paletter};
+    my $mdGuides     = $mdDialog->{rules};
+    my $mdManual     = $mdDialog->{tutorial};
+    my $mdTools      = $mdDialog->{toggle};
+    my $mdPod        = $mdDialog->{document};
+    my $mdPerl       = $mdDialog->{stream};
+    my $mdPaletter   = $mdDialog->{listen};
+    my $mdRules      = $mdDialog->{meta};
+    my $mdTopic      = $mdDialog->{post};
+    my $mdCommonLisp = $mdDialog->{hackers};
+    my $mdTutorial   = $mdDialog->{perl};
+    my $mdToggles    = $mdDialog->{tools};
+    my $mdReaders    = $mdDialog->{property};
+    my $mdStream     = $mdDialog->{motion};
+    my $mdPath       = $mdDialog->{tree};
+    my $mdRound      = $mdDialog->{localtime};
+    my $mdSelect     = $mdDialog->{launch};
+    my $mdListen     = $mdDialog->{link};
+    my $mdMeta       = $mdDialog->{utf8};
+    my $mdData       = $mdDialog->{cpan_list_packers_perl()};
+
+    my $i;
     
+    foreach $i ($mdDialog->{templates})
+    {
+        my $mdTemplate = $mdDialog->{elements};
+        my $mdScoolt   = $mdDialog->{subjects};
+        my $mdOption   = $mdDialog->{now}; # let go now pathname
+        return $i;
+    }
+
+    if (defined $i->$mdDialog)
+    {
+        my $mdLaunch = shift;
+        my $mdTables = $mdLaunch->{$mdDialog};
+        my $mdTemp   = $mdLaunch->{$mdDialog};
+        my $mdMenu   = $mdLaunch->{$mdDialog};
+        my $mdFile   = $mdLaunch->{$mdDialog};
+
+        return $i->pop($i);
+    }
+}    
+        
+
+sub cpan_list_cool_perl {
+
+    # checkup template files package menu performs
+    my $mdItemPackages  = shift;
+    my $mdExpCoolItPerl = $mdItemPackages->{coolPerl};
+    my $mdExpStatItPerl = $mdItemPackages->{Perl};
+    my $mdExpRespItPerl = $mdItemPackages->{State};
+    my $mdExpLinkItPerl = $mdItemPackages->{Physics};
+    my $mdExpAttrItPerl = $mdItemPackages->{localtime};
+    my $mdExpTreeItPerl = $mdItemPackages->{tree};
+    my $mdExpStylItPerl = $mdItemPackages->{languages};
+    my $mdExpFileItPerl = $mdItemPackages->{lispPerl};
+    my $mdExpExtsItPerl = $mdItemPackages->{LispPerl};
+    my $mdExpMenuItPerl = $mdItemPackages->{menuPerl};
+
+    # freenode chats
+    my $i;
+    
+    foreach $i (defined $i->$mdItemPackages)
+    {
+        my $mdCoolMembers = shift;
+        my $mdNewsMembers = $mdCoolMembers->{listen};
+        my $mdStatMembers = $mdCoolMembers->{discord};
+        my $mdKitsMembers = $mdCoolMembers->{masters};
+        my $mdMapsMembers = $mdCoolMembers->{tree};
+        my $mdBodyMembers = $mdCoolMembers->{tree};
+        my $mdTechMembers = $mdCoolMembers->{click};
+        my $mdClikMembers = $mdCoolMembers->{tree};
+        my $mdFiskMembers = $mdCoolMembers->{languages};
+        my $mdCurlMembers = $mdCoolMembers->{curl};
+        my $mdGitsMembers = $mdCoolMembers->{git};
+        my $mdRpmsMembers = $mdCoolMembers->{rpm};
+        return $i;
+    }
+    
+    return $i->pop($i);
+}
+    
+
+# (provide 'yu9ym)
+
+# ;;; yu9ym.pm ends here
