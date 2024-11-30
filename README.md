@@ -1,9 +1,223 @@
  # rz6fl encrypt local data values to current values
+
+```tree
+.
+├── main.cpp
+├── Makefile
+├── matrix
+│   └── gnu
+│       ├── bin
+│       │   ├── qtc++
+│       │   │   ├── ha6kvb.cpp
+│       │   │   ├── ha7wen.cpp
+│       │   │   ├── main.cpp
+│       │   │   ├── ok2ptz.cpp
+│       │   │   ├── rk9jxp.cpp
+│       │   │   ├── rz6fl.upp
+│       │   │   └── yz30au.cpp
+│       │   ├── qtcs
+│       │   │   ├── dh6ufb.lisp
+│       │   │   ├── jt1be.lisp
+│       │   │   ├── m0dsl.lisp
+│       │   │   └── sm7oic.lisp
+│       │   ├── qtds
+│       │   │   ├── code-component
+│       │   │   │   ├── 3A
+│       │   │   │   │   ├── 3z75gfi
+│       │   │   │   │   │   └── ik1hge.m
+│       │   │   │   │   ├── dl2rps
+│       │   │   │   │   │   └── z63med.m
+│       │   │   │   │   └── n0fw
+│       │   │   │   │       └── ru4a.m
+│       │   │   │   ├── gx4aax
+│       │   │   │   │   └── ut5qv
+│       │   │   │   │       └── p
+│       │   │   │   │           └── ra1oz
+│       │   │   │   │               └── 1
+│       │   │   │   │                   └── gm4gtv.m
+│       │   │   │   ├── kh6hhs
+│       │   │   │   │   └── f5aqh.m
+│       │   │   │   ├── n8dab
+│       │   │   │   │   └── e77oa.m
+│       │   │   │   ├── origin
+│       │   │   │   │   ├── 7k3owm
+│       │   │   │   │   │   └── f5kee
+│       │   │   │   │   │       └── p
+│       │   │   │   │   │           └── sp6asd.m
+│       │   │   │   │   ├── 9k2
+│       │   │   │   │   │   └── pa5cm.m
+│       │   │   │   │   ├── df2hl
+│       │   │   │   │   │   └── sx5hro.m
+│       │   │   │   │   ├── dl0mfs
+│       │   │   │   │   │   └── dj5cl.m
+│       │   │   │   │   ├── dl2rms
+│       │   │   │   │   │   └── ot4l.m
+│       │   │   │   │   ├── dl60darc
+│       │   │   │   │   │   └── zn0zpw.m
+│       │   │   │   │   ├── e73rb
+│       │   │   │   │   │   └── la6iha.m
+│       │   │   │   │   ├── e77c
+│       │   │   │   │   │   └── dm8d.m
+│       │   │   │   │   ├── ea2ea
+│       │   │   │   │   │   └── ja5nsr.m
+│       │   │   │   │   ├── eaf
+│       │   │   │   │   │   └── ua9afz.m
+│       │   │   │   │   ├── em1ot
+│       │   │   │   │   │   └── w4pbl.m
+│       │   │   │   │   ├── f5uow
+│       │   │   │   │   │   └── r9lm.m
+│       │   │   │   │   ├── f8crk
+│       │   │   │   │   │   └── ha5ak.m
+│       │   │   │   │   ├── g3uje
+│       │   │   │   │   ├── gq1n
+│       │   │   │   │   │   └── oe2gen.m
+│       │   │   │   │   ├── ha6pf
+│       │   │   │   │   │   └── vo2wl.m
+│       │   │   │   │   ├── hb9aws
+│       │   │   │   │   │   └── ee4a.m
+│       │   │   │   │   ├── ja2idz
+│       │   │   │   │   │   └── ut1ww.m
+│       │   │   │   │   ├── k0av
+│       │   │   │   │   │   └── ai2q.m
+│       │   │   │   │   ├── k0eu
+│       │   │   │   │   │   └── ux5ur
+│       │   │   │   │   │       └── A
+│       │   │   │   │   │           └── am7op.m
+│       │   │   │   │   ├── ka2owz
+│       │   │   │   │   │   └── it9nva.m
+│       │   │   │   │   ├── n1ild
+│       │   │   │   │   │   └── ur5eu.m
+│       │   │   │   │   ├── n1rr
+│       │   │   │   │   │   └── n3ii.m
+│       │   │   │   │   ├── n6aw
+│       │   │   │   │   │   └── rm7m.m
+│       │   │   │   │   ├── no2d
+│       │   │   │   │   │   └── i4hrh
+│       │   │   │   │   │       └── ua3ldu.m
+│       │   │   │   │   ├── ok2bk
+│       │   │   │   │   │   └── w2gdj.m
+│       │   │   │   │   ├── ok7an
+│       │   │   │   │   │   └── k8m.m
+│       │   │   │   │   ├── pi4alk
+│       │   │   │   │   │   └── k0sw.m
+│       │   │   │   │   ├── rn3f
+│       │   │   │   │   │   └── om8aq.m
+│       │   │   │   │   ├── s53qrp
+│       │   │   │   │   │   └── li1k.m
+│       │   │   │   │   ├── sb7s
+│       │   │   │   │   │   └── ua3bo.m
+│       │   │   │   │   ├── sp3kwa
+│       │   │   │   │   │   └── gm4zrr.m
+│       │   │   │   │   ├── sv1buu
+│       │   │   │   │   │   └── rp4m.m
+│       │   │   │   │   ├── sv3aqm
+│       │   │   │   │   │   └── ew6cu.m
+│       │   │   │   │   ├── tk
+│       │   │   │   │   │   ├── dl4ff
+│       │   │   │   │   │   │   └── 8sof.m
+│       │   │   │   │   │   └── om2fy
+│       │   │   │   │   │       └── r5ww.m
+│       │   │   │   │   ├── tm1cw
+│       │   │   │   │   │   └── w8jgu.m
+│       │   │   │   │   ├── tm34uft
+│       │   │   │   │   │   └── pa6x.m
+│       │   │   │   │   ├── ts3b
+│       │   │   │   │   │   └── w3cc.m
+│       │   │   │   │   ├── v31jp
+│       │   │   │   │   │   └── s53ds.m
+│       │   │   │   │   ├── ve9var
+│       │   │   │   │   │   └── ol7t.m
+│       │   │   │   │   ├── vo1hp
+│       │   │   │   │   │   └── zb2bu.m
+│       │   │   │   │   ├── w2ob
+│       │   │   │   │   │   └── v51as.m
+│       │   │   │   │   ├── w5ljt
+│       │   │   │   │   │   └── r20mask.m
+│       │   │   │   │   ├── wn6k
+│       │   │   │   │   │   └── df0nf.m
+│       │   │   │   │   ├── y87c
+│       │   │   │   │   │   └── n6nt.m
+│       │   │   │   │   └── y9vcq
+│       │   │   │   │       └── cu30aa.m
+│       │   │   │   ├── r3tha
+│       │   │   │   │   └── n9ue.lisp
+│       │   │   │   ├── rl3dz
+│       │   │   │   │   ├── 7x2ro.lisp
+│       │   │   │   │   ├── dl4jlm.lisp
+│       │   │   │   │   ├── qrp.lisp
+│       │   │   │   │   ├── ut2iu.lisp
+│       │   │   │   │   └── yr8e.lisp
+│       │   │   │   ├── rt75ms
+│       │   │   │   │   └── dl5fdp.m
+│       │   │   │   ├── ru3f
+│       │   │   │   │   └── sp9pbb.m
+│       │   │   │   ├── rw4cg
+│       │   │   │   │   └── k4zrj.m
+│       │   │   │   └── sm1oii.text
+│       │   │   ├── dl1ydl.lisp
+│       │   │   ├── ea7aae.lisp
+│       │   │   ├── k8m.lisp
+│       │   │   ├── om3cor.lisp
+│       │   │   ├── s57ozb.lisp
+│       │   │   ├── sc7ag.lisp
+│       │   │   ├── ut7ni.lisp
+│       │   │   └── yo4krb.lisp
+│       │   ├── qtgdb
+│       │   │   └── ja8zo.gdb
+│       │   ├── qtperl
+│       │   │   ├── yu9ym.pm
+│       │   │   └── yu9ym.pm_archive
+│       │   └── qtwls
+│       │       ├── g4wgy.wlnb
+│       │       └── g4wgy.wls
+│       ├── lib
+│       │   └── rz6fl.tar.xz
+│       └── test
+│           ├── qtc++
+│           │   ├── ha6kvb.cpp
+│           │   ├── ha7wen.cpp
+│           │   ├── main.cpp
+│           │   ├── ok2ptz.cpp
+│           │   ├── rk9jxp.cpp
+│           │   ├── rz6fl.upp
+│           │   └── yz30au.cpp
+│           ├── qtcs
+│           │   ├── dh6ufb.lisp
+│           │   ├── jt1be.lisp
+│           │   ├── m0dsl.lisp
+│           │   └── sm7oic.lisp
+│           ├── qtds
+│           │   ├── dl1ydl.lisp
+│           │   ├── k8m.lisp
+│           │   ├── s57ozb.lisp
+│           │   ├── sc7ag.lisp
+│           │   └── ut7ni.lisp
+│           ├── qtperl
+│           │   └── yu9ym.pm
+│           └── qtwls
+│               ├── g4wgy.wlnb
+│               └── g4wgy.wls
+├── project
+└── README.md
+
+87 directories, 110 files
+```
   
  
 This code snippet appears to be written in Common Lisp.
  Here's a more readable version:
 
+ encrypt get getValues => this.values;
+
+ set setValues(encrypt values) => this.values = values;
+
+ This get getLisp. => this.Lisp.;
+
+ set setLisp.(This Lisp.) => this.Lisp. = Lisp.;
+
+  get getVersion: => this.version:;
+
+ set setVersion:( version:) => this.version: = version:;
 ```lisp
 (defconstant *default-pathname-defaults* nil
   (if (sb-int::%write (locally &body write) (stream 'defaults))
